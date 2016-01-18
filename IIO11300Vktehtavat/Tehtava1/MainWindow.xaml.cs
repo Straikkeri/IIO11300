@@ -20,48 +20,38 @@ using System.Windows.Shapes;
 
 namespace Tehtava1
 {
-  /// <summary>
-  /// Interaction logic for MainWindow.xaml
-  /// </summary>
-  public partial class MainWindow : Window
-  {
-    public MainWindow()
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
     {
-      InitializeComponent();
-    }
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
             //TODO
             try
             {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
+                tulosPA.Text = Convert.ToString(Double.Parse(boxWinHeight.Text) * Double.Parse(boxWinWidth.Text));
+                tulosKP.Text = Convert.ToString((Double.Parse(boxWinWidth.Text) + Double.Parse(boxSideWidth.Text)*2)*2 + Double.Parse(boxWinHeight.Text)*2);
+                tulosKPA.Text = Convert.ToString(Double.Parse(boxWinHeight.Text) * Double.Parse(boxSideWidth.Text) + ((Double.Parse(boxWinWidth.Text) + Double.Parse(boxSideWidth.Text) * 2) * Double.Parse(boxSideWidth.Text)) * 2);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               MessageBox.Show(ex.Message);
             }
             finally
             {
-                //yield to an user that everything okay
+                //yield to a user that everything okay
             }
         }
 
-    private void btnClose_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
-  }
-
-  public class BusinessLogicWindow
-    {
-    /// <summary>
-    /// CalculatePerimeter calculates the perimeter of a window
-    /// </summary>
-    public static double CalculatePerimeter(double widht, double height)
+        private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
+
         }
     }
 }
