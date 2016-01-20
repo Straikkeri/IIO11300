@@ -13,7 +13,7 @@
                 <StackPanel Orientation="Horizontal" Width="378" Height="117">
                     <DockPanel>
                         <StackPanel Orientation="Vertical" Margin="0,0,0,0" Width="203">
-                            <TextBlock x:Name="blockWinWidth" Text="Ikkunan leveys (L):" Height="28" Margin="10,10,10,0"  HorizontalAlignment="right"/>
+                            <TextBlock x:Name="blockWinWidth" Text="Ikkunan leveys (L):" Height="28" Margin="0,10,10,0"  HorizontalAlignment="right"/>
                             <TextBlock x:Name="blockWinHeight" Text="Ikkunan korkeus(H):" Height="28" Margin="10,10,10,0"  HorizontalAlignment="right"/>
                             <TextBlock x:Name="blockSideWidth" Text="Karmipuun leveys (W):" Height="28" Margin="10,10,10,0" Width="178"  HorizontalAlignment="right" />
                         </StackPanel>
@@ -36,6 +36,7 @@
                             <TextBlock x:Name="txtPA" Text="Ikkunan pinta-ala:" TextWrapping="Wrap" HorizontalAlignment="right"/>
                             <TextBlock x:Name="txtKP"  Text="Karmin piiri:" TextWrapping="Wrap" HorizontalAlignment="right"/>
                             <TextBlock x:Name="txtKPA"  Text="Karmin pinta-ala:" TextWrapping="Wrap" HorizontalAlignment="right"/>
+                            <Button x:Name="btnCalculateArea00" Content="Button" Click="btnCalculateArea00_Click"/>
                         </StackPanel>
                     </DockPanel>
                     <StackPanel Margin="0,0,0,0" Width="140">

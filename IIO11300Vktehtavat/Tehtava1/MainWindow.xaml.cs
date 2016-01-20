@@ -23,8 +23,7 @@ namespace Tehtava1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
-    {
+    public partial class MainWindow : Window {
         public MainWindow()
         {
             InitializeComponent();
@@ -33,25 +32,33 @@ namespace Tehtava1
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
             //TODO
-            try
-            {
+            try{
                 tulosPA.Text = Convert.ToString(Double.Parse(boxWinHeight.Text) * Double.Parse(boxWinWidth.Text));
                 tulosKP.Text = Convert.ToString((Double.Parse(boxWinWidth.Text) + Double.Parse(boxSideWidth.Text)*2)*2 + Double.Parse(boxWinHeight.Text)*2);
                 tulosKPA.Text = Convert.ToString(Double.Parse(boxWinHeight.Text) * Double.Parse(boxSideWidth.Text) + ((Double.Parse(boxWinWidth.Text) + Double.Parse(boxSideWidth.Text) * 2) * Double.Parse(boxSideWidth.Text)) * 2);
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex){
                MessageBox.Show(ex.Message);
             }
-            finally
-            {
+            finally{
                 //yield to a user that everything okay
-            }
+            }  
         }
 
-        private void btnClose_Click(object sender, RoutedEventArgs e)
-        {
+        private void btnClose_Click(object sender, RoutedEventArgs e){
 
         }
+
+        private void btnCalculateArea00_Click(object sender, RoutedEventArgs e) {
+            JAMK.IT.IIO11300.Ikkuna ikk = new JAMK.IT.IIO11300.Ikkuna();
+            ikk.Korkeus = double.Parse(boxWinHeight.Text);
+            ikk.Leveys = double.Parse(boxWinWidth.Text);
+            //MessageBox.Show(ikk.LaskePintaAla().ToString());
+            MessageBox.Show(ikk.PintaAla());
+        }
+    }
+
+    public class BusinessLogicWindow {
+            
     }
 }
