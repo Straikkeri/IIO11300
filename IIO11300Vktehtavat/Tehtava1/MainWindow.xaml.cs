@@ -54,7 +54,7 @@ namespace Tehtava1
             ikk.Korkeus = double.Parse(boxWinHeight.Text);
             ikk.Leveys = double.Parse(boxWinWidth.Text);
             //MessageBox.Show(ikk.LaskePintaAla().ToString());
-            MessageBox.Show(ikk.PintaAla());
+            MessageBox.Show(ikk.PintaAla.ToString());
         }
     }
 

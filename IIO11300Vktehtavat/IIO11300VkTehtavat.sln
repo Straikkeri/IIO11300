@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "Tehtava1\Tehtava1.csproj", "{BBFDB3F8-2232-4C51-A154-1DFFF2E75FE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_01_ikkunan_pinta-ala", "Tehtava1\tehtava_01_ikkunan_pinta-ala.csproj", "{BBFDB3F8-2232-4C51-A154-1DFFF2E75FE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus_01_mediaplayer", "Harjoitus_01_mediaplayer\Harjoitus_01_mediaplayer.csproj", "{A6267D70-BA14-4B7B-8A27-243E91D83268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_02_lotto", "tehtava_02_lotto\tehtava_02_lotto.csproj", "{18A3C272-0E53-4E2A-91B1-27C8A746129A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A6267D70-BA14-4B7B-8A27-243E91D83268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6267D70-BA14-4B7B-8A27-243E91D83268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6267D70-BA14-4B7B-8A27-243E91D83268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A3C272-0E53-4E2A-91B1-27C8A746129A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A3C272-0E53-4E2A-91B1-27C8A746129A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A3C272-0E53-4E2A-91B1-27C8A746129A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A3C272-0E53-4E2A-91B1-27C8A746129A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
