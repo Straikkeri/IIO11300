@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace tehtava_02_lotto {
     class Lotto {
 
-        public int[] draw(int lotto, int draws) {
+        public int[] draw(int draws, int lotto) {
+
+            Console.WriteLine("lotto on: " + lotto);
             
             int[] suomiTable = new int[7];
             int[] vikingTable = new int[6];
@@ -21,6 +23,7 @@ namespace tehtava_02_lotto {
                 for (int i = 0; i < 7; i++) {
                     suomiTable[i] = rand.Next(1, 39);
                 }
+                Console.WriteLine("suomiTable pituus = " + suomiTable.Length);
             }
             if (lotto == 2) {
                 for (int i = 0; i < 6; i++) {

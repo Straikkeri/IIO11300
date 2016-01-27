@@ -20,29 +20,49 @@ namespace tehtava_02_lotto {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+            Initialization();
         }
-
+        
         int selectedLotto = 0;
         Lotto lottoOlio = new Lotto();
 
-        private void lottoBox_SelectedIndexChanged(object sender, System.EventArgs e) {
-            if (lottoBox.Text == "Suomi") {
+        private void Initialization() {
+            drawsBox.Text = "0";
+        }
+
+        private void lottoBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            if (lottoBox.SelectedIndex == 0) {
+                Console.WriteLine("suomi valittu.");
                 selectedLotto = 1;
             }
-            else if (lottoBox.Text == "VikingLotto") {
+            else if (lottoBox.SelectedIndex == 1) {
+                Console.WriteLine("viking valittu.");
                 selectedLotto = 2;
+                Console.WriteLine("selectedLotto = " + selectedLotto);
             }
-            else if (lottoBox.Text == "EuroJackpot") {
+            else if (lottoBox.SelectedIndex == 2) {
+                Console.WriteLine("euro valittu.");
                 selectedLotto = 3;
-            } else {
+            }
+            else {
+                Console.WriteLine(lottoBox.SelectedIndex == -1);
                 selectedLotto = 0;
             }
         }
 
         private void btnDraw_Click(object sender, RoutedEventArgs e) {
 
+            int[] tempTable;
+
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            int[] tempTable = lottoOlio.draw(Int32.Parse(drawsBox.Text), selectedLotto);
+            try {
+                Console.WriteLine("kutsutaan drawia loton arvolla: " + selectedLotto);
+                tempTable = lottoOlio.draw(Int32.Parse(drawsBox.Text), selectedLotto);
+            }
+            catch (Exception) {
+                MessageBox.Show("Draws luukussa oltava numero.");
+                throw;
+            }
 
             for (int i = 0; i < tempTable.Length; i++) {
                 sb.Append(Convert.ToString(tempTable[i])).Append(", ");
@@ -56,5 +76,7 @@ namespace tehtava_02_lotto {
         private void btnClose_Click(object sender, RoutedEventArgs e) {
 
         }
+
+
     }
 }
