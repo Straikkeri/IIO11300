@@ -52,7 +52,7 @@ namespace tehtava_02_lotto {
 
         private void btnDraw_Click(object sender, RoutedEventArgs e) {
 
-            int[] tempTable;
+            int[][] tempTable;
 
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             try {
@@ -64,10 +64,18 @@ namespace tehtava_02_lotto {
                 throw;
             }
 
-            for (int i = 0; i < tempTable.Length; i++) {
-                sb.Append(Convert.ToString(tempTable[i])).Append(", ");
+            Console.WriteLine("tempTable pituus on: " + tempTable.Length);
+
+            for (int j = 0; j < tempTable.Length; j++) {
+                sb.Clear();
+                Console.WriteLine("Kierros: " + j);
+                Console.WriteLine("tempTable indeksi " + j + " pituus on: " + tempTable[j].Length);
+                for (int i = 0; i < tempTable[j].Length; i++) {
+                    Console.WriteLine(" -Kierros: " + i);
+                    sb.Append(Convert.ToString(tempTable[j][i])).Append(", ");
+                }
+                drawsArea.Items.Add(sb.ToString()); 
             }
-            drawsArea.Items.Add(sb.ToString());
         }
         private void btnClear_Click(object sender, RoutedEventArgs e) {
 
