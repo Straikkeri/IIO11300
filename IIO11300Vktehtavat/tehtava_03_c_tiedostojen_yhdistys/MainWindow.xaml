@@ -1,0 +1,26 @@
+﻿<Window x:Class="tehtava_03_c_tiedostojen_yhdistys.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tehtava_03_c_tiedostojen_yhdistys"
+        mc:Ignorable="d"
+        Title="Tiedostojen yhdistys" Height="357.116" Width="546.498">
+    <Grid Margin="0,0,2,0">
+        <Button x:Name="btn_hae" Content="Hae tiedostot" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="516" Height="20" Click="btn_hae_Click"/>
+        <TextBlock x:Name="txtBlock_hakemisto" HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Hakemisto:" VerticalAlignment="Top" RenderTransformOrigin="1.975,-0.063"/>
+        <TextBox x:Name="txtBox_hakemisto" HorizontalAlignment="Left" Height="22" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="516" Text="Z:\windows-ohjelmointi\IIO11300Vktehtavat\tehtava_03_c_tiedostojen_yhdistys\testitiedostot"/>
+        <TextBlock x:Name="txtBlock_tiedostot" HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="Wrap" Text="Löydetyt tiedostot:" VerticalAlignment="Top"/>
+        <ListView x:Name="listView_files" HorizontalAlignment="Left" Height="153" Margin="10,94,0,0" VerticalAlignment="Top" Width="516">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock x:Name="txtBlock_tulos" HorizontalAlignment="Left" Margin="10,247,0,0" TextWrapping="Wrap" Text="Tulostiedosto:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_tulos" HorizontalAlignment="Left" Height="23" Margin="10,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="516" Text="D:\testit\yhdistetty.txt"/>
+        <Button x:Name="btn_yhdista" Content="Yhdistä tiedostot" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" Width="516" Click="btn_yhdista_Click"/>
+
+    </Grid>
+</Window>
