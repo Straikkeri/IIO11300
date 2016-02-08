@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus_03_mittausdata", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_03_c_tiedostojen_yhdistys", "tehtava_03_c_tiedostojen_yhdistys\tehtava_03_c_tiedostojen_yhdistys.csproj", "{D1DF96FC-E7FD-44A9-A4D0-90EF206B5E07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_04_sm-liiga", "tehtava_04_sm-liiga\tehtava_04_sm-liiga.csproj", "{871C51BA-AC96-4593-A2EA-4153787B3B1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D1DF96FC-E7FD-44A9-A4D0-90EF206B5E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1DF96FC-E7FD-44A9-A4D0-90EF206B5E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1DF96FC-E7FD-44A9-A4D0-90EF206B5E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

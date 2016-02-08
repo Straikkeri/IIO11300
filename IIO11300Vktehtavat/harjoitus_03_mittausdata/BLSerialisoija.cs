@@ -36,7 +36,7 @@ namespace JAMK.IT.IIO11300
       XmlSerializer deserializer = new XmlSerializer(typeof(List<JAMK.IT.IIO11300.MittausData>));
       TextReader tr = new StreamReader(tiedosto);
       try
-      {
+      { 
         return (List<JAMK.IT.IIO11300.MittausData>)deserializer.Deserialize(tr);
       }
       catch (Exception ex)
