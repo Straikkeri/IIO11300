@@ -27,22 +27,22 @@ namespace tehtava_04_sm_liiga {
 
         public string etunimi {
             get { return enimi; }
-            set { enimi = etunimi; }
+            set { enimi = value; }
         }
 
         public string sukunimi {
             get { return snimi; }
-            set { snimi = sukunimi; }
+            set { snimi = value; }
         }
 
         public int siirtohinta {
             get { return shinta; }
-            set { shinta = siirtohinta; }
+            set { shinta = value; }
         }
 
         public string seura {
             get { return pseura; }
-            set { pseura = seura; }
+            set { pseura = value; }
         }
         public string henkilotunnus {
             get { return hetu; }

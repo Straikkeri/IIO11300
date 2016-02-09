@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tehtava_04_sm_liiga"
         mc:Ignorable="d"
-        Title="MainWindow" Height="195.274" Width="519.665">
-    <Grid Margin="0,0,2,-1">
+        Title="MainWindow" Height="203" Width="544.403">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="vertical" Margin="0,0,0,31">
+        <StackPanel Orientation="vertical" Margin="2,2,2,0">
             <StackPanel Orientation="Horizontal" Height="134">
-                <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Vertical" Margin="2,0,0,0">
                     <TextBlock Name="enimi" Text="Etunimi" Width="100" Height="23"/>
                     <TextBlock Name="snimi" Text="Sukunimi" Width="100" Height="23"/>
                     <TextBlock Name="siirtohinta" Text="Siirtohinta" Width="100" Height="23"/>
@@ -28,16 +28,20 @@
                 <StackPanel Orientation="Vertical">
                     <Button Name="btnLuo" Height="23" Content="Luo uusi pelaaja" Margin="2,2,2,2" Click="btnLuo_Click"/>
                     <Button Name="btnTalleta" Height="23" Content="Talleta pelaaja" Margin="2,2,2,2" Click="btnTalleta_Click"/>
-                    <Button Name="btnPoista" Height="23" Content="Poista pelaaja" Margin="2,2,2,2"/>
+                    <Button Name="btnPoista" Height="23" Content="Poista pelaaja" Margin="2,2,2,2" Click="btnPoista_Click"/>
                     <Button Name="btnKirjoita" Height="23" Content="Kirjoita pelaajat" Margin="2,2,2,2" Click="btnKirjoita_Click"/>
-                    <Button Name="btnLopeta" Height="23" Content="Lopetus" Margin="2,2,2,2"/>
+                    <Button Name="btnLopeta" Height="23" Content="Lopetus" Margin="2,2,2,2" Click="btnLopeta_Click"/>
                 </StackPanel>
                 <StackPanel>
                     <ListBox x:Name="listviewPelaajat" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Width="185" Grid.ColumnSpan="2" Margin="2,2,2,2" SelectionChanged="listviewPelaajat_SelectionChanged"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="35">
-                <StatusBar Width="516"/>
+            <StackPanel Orientation="Horizontal" Height="35" Margin="0,0,0,10">
+                <StatusBar x:Name="SBInform" Width="508">
+                    <StatusBarItem>
+                        <TextBlock Name="SBTBStatus" />
+                    </StatusBarItem>
+                </StatusBar>
             </StackPanel>
         </StackPanel>
     </Grid>
