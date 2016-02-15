@@ -14,8 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace tehtava_04_sm_liiga {
     /// <summary>
@@ -287,26 +285,6 @@ namespace tehtava_04_sm_liiga {
 
         private void btnLopeta_Click(object sender, RoutedEventArgs e) {
             Application.Current.Shutdown();
-        }
-
-        private void btnSerialize_Click(object sender, RoutedEventArgs e) {
-            System.Runtime.Serialization.IFormatter formatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-            Stream stream = new FileStream(@"D:\pelaajat.bin", FileMode.Create, FileAccess.Write, FileShare.None);
-            formatter.Serialize(stream, pelaajat);
-            stream.Close();
-        }
-
-        private void btnDeserialize_Click(object sender, RoutedEventArgs e) {
-            IFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream(@"D:\pelaajat.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
-            //List<Pelaaja> obj 
-            pelaajat = (List<Pelaaja>)formatter.Deserialize(stream);
-            stream.Close();
-
-            // Here's the proof.
-            listviewPelaajat.ItemsSource = null;
-            listviewPelaajat.ItemsSource = pelaajat;
-            SBTBStatus.Text = "Pelaaja tallennettu onnistuneesti.";
         }
     }
 }

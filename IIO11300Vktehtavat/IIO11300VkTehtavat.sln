@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_03_c_tiedostojen_yh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_04_sm-liiga", "tehtava_04_sm-liiga\tehtava_04_sm-liiga.csproj", "{871C51BA-AC96-4593-A2EA-4153787B3B1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus_04_konsoli_xml", "Harjoitus_04_konsoli_xml\Harjoitus_04_konsoli_xml.csproj", "{18DB9CD8-FF68-4386-A45F-F5321A1D668C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus_05_WPF_XML", "Harjoitus_05_WPF_XML\Harjoitus_05_WPF_XML.csproj", "{FB613885-D89A-4B3D-B06C-1E6D933734FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871C51BA-AC96-4593-A2EA-4153787B3B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18DB9CD8-FF68-4386-A45F-F5321A1D668C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18DB9CD8-FF68-4386-A45F-F5321A1D668C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18DB9CD8-FF68-4386-A45F-F5321A1D668C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18DB9CD8-FF68-4386-A45F-F5321A1D668C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

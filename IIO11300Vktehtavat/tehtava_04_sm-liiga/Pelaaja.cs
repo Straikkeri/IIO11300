@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace tehtava_04_sm_liiga {
-    class Pelaaja {
+    [Serializable]class Pelaaja {
 
         string enimi, snimi, pseura, hetu;
         int shinta;
