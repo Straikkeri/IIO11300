@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus_04_konsoli_xml", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus_05_WPF_XML", "Harjoitus_05_WPF_XML\Harjoitus_05_WPF_XML.csproj", "{FB613885-D89A-4B3D-B06C-1E6D933734FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus_06", "Harjoitus_06\Harjoitus_06.csproj", "{8EA01A65-09FC-4E83-8EBD-927FE348D4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_05_viinikellari", "tehtava_05_viinikellari\tehtava_05_viinikellari.csproj", "{DB03F52C-4F67-433E-8C6A-4A07E1C51C92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB613885-D89A-4B3D-B06C-1E6D933734FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA01A65-09FC-4E83-8EBD-927FE348D4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA01A65-09FC-4E83-8EBD-927FE348D4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA01A65-09FC-4E83-8EBD-927FE348D4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA01A65-09FC-4E83-8EBD-927FE348D4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB03F52C-4F67-433E-8C6A-4A07E1C51C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB03F52C-4F67-433E-8C6A-4A07E1C51C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB03F52C-4F67-433E-8C6A-4A07E1C51C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB03F52C-4F67-433E-8C6A-4A07E1C51C92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
