@@ -23,7 +23,7 @@ namespace Harjoitus_04_konsoli_xml {
                 for (int i = 0; i < xnl.Count; i++) {
                     xn = xnl.Item(i);
                     //näytetään sisältö kokonaisuudessaan
-                    Console.WriteLine(xn.InnerText);
+                    //Console.WriteLine(xn.InnerText);
                     //haetaan noodin kaikki noodit (=elementit) ja näytetään ne
                     xnl2 = xn.ChildNodes;
                     for (int j = 0; j < xnl2.Count; j++) {

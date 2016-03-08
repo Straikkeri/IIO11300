@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Harjoitus_06"
         mc:Ignorable="d"
-        Title="Minu ikkuna." Height="300" Width="339.74">
+        Title="Elokuva Checklist" Height="300" Width="339.74">
     <Window.Resources>
         <DataTemplate x:Key="MovieName" >
             <StackPanel>
