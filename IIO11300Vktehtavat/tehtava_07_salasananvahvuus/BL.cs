@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace tehtava_07_salasananvahvuus {
     class BL {
@@ -21,19 +22,24 @@ namespace tehtava_07_salasananvahvuus {
             bool doOnce2 = false;
             bool doOnce3 = false;
 
+            //MessageBox.Show("BL:ssä mennään.");
+
             char[] password = pwd.ToCharArray();
 
             for (int i = 0; i < password.Length; i++) { //lasketaan uppercase kirjaimet
                 if (char.IsUpper(password[i])) {
+                    //MessageBox.Show("Isokirjan löytynyt.");
                     upperCaseCount++;
                     if (!doOnce1) {
                         complexity++;
+                       // MessageBox.Show("eka doOnce, complexity: " + complexity);
                         doOnce1 = true;
                     }
                 }
                 if (char.IsLower(password[i])) { //lasketaan lowercase kirjaimet
                     lowerCaseCount++;
                     if (!doOnce2) {
+                        //MessageBox.Show("Pienikirjain löytynyt.");
                         complexity++;
                         doOnce2 = true;
                     }
@@ -46,6 +52,7 @@ namespace tehtava_07_salasananvahvuus {
             for (int j = 0; j < password.Length; j++) { //tutkitaan joukko erikoismerkkejä ja lasketaan niiden esiintyvyys
                 for (int k = 0; k < specialCharactersArray.Length; k++) {
                     if (password[j] == specialCharactersArray[k]) {
+                        //MessageBox.Show("Erikoismerkki löytynyt.");
                         specialCharCount++;
                         if (!doOnce3) {
                             complexity++;
@@ -58,6 +65,7 @@ namespace tehtava_07_salasananvahvuus {
             numberCount = pwd.Count(Char.IsDigit);  //tutkitaan kuinka monta numeroa salasanassa
 
             if (numberCount > 0) {
+                //MessageBox.Show("Numero löytynyt.");
                 complexity++;
             }
 
@@ -71,18 +79,22 @@ namespace tehtava_07_salasananvahvuus {
             */
 
             if (wordLength < 8 || complexity <= 1) { //todetaan salasanan vahvuus
+                //MessageBox.Show("Eka if toteutuu.");
                 strength = 0;
             }
-            if ((wordLength > 8 && wordLength < 12) && complexity >= 2) {
+            if ((wordLength >= 8 && wordLength < 12) && complexity >= 2) {
+                //MessageBox.Show("Toka if toteutuu.");
                 strength = 1;
             }
             if ((wordLength > 12 && wordLength < 16) && complexity == 3) {
+                //MessageBox.Show("Kolmas if toteutuu.");
                 strength = 3;
             }
             if (wordLength >= 16 && complexity == 4) {
+                //MessageBox.Show("Neljäs if toteutuu.");
                 strength = 4;
             }
-
+            MessageBox.Show("Complexity: " + complexity + " Palautetaan " + strength);
             return strength;
         }
     }

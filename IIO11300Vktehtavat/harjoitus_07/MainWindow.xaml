@@ -43,6 +43,7 @@
                 <TextBlock Text="{Binding ElementName=cbCourses, Path=SelectedItem}" />
                 <TextBlock Text="Comboboxi täytetään koodista" />
                 <ComboBox x:Name="cbCourses2" />
+                <Button x:Name="btnShowPlayers2" Content="näytä pelaajat" Click="btnShowPlayers2_Click"/>
             </StackPanel>
             <StackPanel Background="Aquamarine">
                 <!-- sidotaan stackpaneliin datacontextiksi oliokokoelma -->

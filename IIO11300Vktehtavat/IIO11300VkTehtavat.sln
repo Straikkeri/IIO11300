@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus_07", "harjoitus_0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava_07_salasananvahvuus", "tehtava_07_salasananvahvuus\tehtava_07_salasananvahvuus.csproj", "{C1F10941-7D5F-42A3-9C9B-B8978B6961C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus_08_ConsoleDemo", "harjoitus_08_ConsoleDemo\harjoitus_08_ConsoleDemo.csproj", "{4F088586-7A91-4754-8B38-17D70FD4E26A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{C1F10941-7D5F-42A3-9C9B-B8978B6961C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1F10941-7D5F-42A3-9C9B-B8978B6961C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1F10941-7D5F-42A3-9C9B-B8978B6961C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F088586-7A91-4754-8B38-17D70FD4E26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F088586-7A91-4754-8B38-17D70FD4E26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F088586-7A91-4754-8B38-17D70FD4E26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F088586-7A91-4754-8B38-17D70FD4E26A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

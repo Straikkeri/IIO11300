@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,11 @@ namespace harjoitus_07 {
         private void btnBackward_Click(object sender, RoutedEventArgs e) {
             clicked--;
             myGrid.DataContext = joukkueet[clicked];
+        }
+
+        private void btnShowPlayers2_Click(object sender, RoutedEventArgs e) {
+            PlayerWindow win = new PlayerWindow();
+            win.ShowDialog();
         }
     }
 }
