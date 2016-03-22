@@ -1,0 +1,28 @@
+﻿<Window x:Class="tehtava_09_asiakkaidenMuokkaus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tehtava_09_asiakkaidenMuokkaus"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="560" Width="525">
+    <Grid>
+        <StackPanel>
+            <Button Name="btnGetCustomers" Content="Hae asiakkaat" Click="btnGetData_Click" />
+            <Button Name="btnNewCustomer" Content="Tee uusi" Click="btnNewCustomer_Click" />
+            <TextBlock Name="tblEnimi" Text="Etunimi"/>
+            <TextBox Name="tbEnimi"/>
+            <TextBlock Name="tblSnimi" Text="Sukunimi"/>
+            <TextBox Name="tbSnimi"/>
+            <TextBlock Name="tblOsoite" Text="Osoite"/>
+            <TextBox Name="tbOsoite"/>
+            <TextBlock Name="tblPostinro" Text="Postninumero"/>
+            <TextBox Name="tbPostinro"/>
+            <TextBlock Name="tblKaupunki" Text="Kaupunki"/>
+            <TextBox Name="tbKaupunki"/>
+            <Button Name="btnDeleteCustomer" Content="Poista valittu" Click="btnDeleteCustomer_Click" />
+            <Button Name="btnSaveChanges" Content="Tallenna muutokset" Click="btnSaveChanges_Click" />
+            <DataGrid Height="280" x:Name="customersDataGrid" ItemsSource="{Binding Customers}" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Width="517"  />
+        </StackPanel>
+    </Grid>
+</Window>
